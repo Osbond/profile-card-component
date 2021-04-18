@@ -1,0 +1,106 @@
+:root{
+    box-sizing: inherit;
+    font-size: 1.125em;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+*, 
+::before, ::after {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100%;
+    background-color: hsl(185, 75%, 39%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right 45vw bottom 45vh, left 43vw top 48vh;
+}
+
+.box__1{
+    width: 20em;
+    display: inline-block;
+    min-width:20em;
+    
+    
+}
+
+.box__backgroundImg{
+    
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.box__2{
+    min-width:20em;
+    text-align: center;
+    font-weight: 700; 
+    background-color: #fff;
+    border-radius: 0 0 1em 1em;
+    padding: 3.3em 0 0;
+    position: relative;
+    display: inline-block;
+
+}
+
+
+
+.box__avatar{
+    border-radius: 50%;
+    border: .4em solid #fff;
+    position: absolute;
+    top: -3.3em;
+    left: 6.9em;
+}
+
+.box__followers{
+    border-top: .01em solid hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    padding-top: .5em;
+    padding-bottom: .3em;
+    
+}
+
+.box__location{
+    font-size: .75rem;
+    margin-top: -.5em;
+}
+
+.grey {
+    color: hsl(0, 0%, 60%);
+    font-weight: 500;
+}
+.box__likes {
+    font-size: .6rem;
+    letter-spacing: .1em;
+    
+}
+
+.box__age{
+    white-space: pre;
+}
+
+@media (min-width: 900px) {
+    
+    .box{
+        background-position: right 50vw bottom 36vh, left 50vw top 52vh;
+    }
+}
